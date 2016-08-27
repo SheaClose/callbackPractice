@@ -78,9 +78,14 @@ multiply(4, 3, function(answer){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
-
-
+function contains(arr, name, callBack) {
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] === name) {
+			return true;
+		}
+	}
+	return false;
+}
 
   //Code Here for contains
 
