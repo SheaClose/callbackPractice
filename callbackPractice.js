@@ -62,7 +62,9 @@ last(names, function(lastName){
 
 
 
-
+function multiply(num1, num2, callBack) {
+    return callBack(num1 * num2)
+}
 
   //Code Here for multiply
 
