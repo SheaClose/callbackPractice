@@ -81,10 +81,10 @@ multiply(4, 3, function(answer){
 function contains(arr, name, callBack) {
 	for (var i = 0; i < arr.length; i++) {
 		if (arr[i] === name) {
-			return true;
+			return callBack(true);
 		}
 	}
-	return false;
+	return callBack(false);
 }
 
   //Code Here for contains
@@ -96,6 +96,7 @@ contains(names, 'Colt', function(result){
     console.log('Colt is not in the array');
   }
 });
+
 
 
 
