@@ -104,7 +104,24 @@ contains(names, 'Colt', function(result){
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 
+function uniq(arr, callBack) {
+	var uniqNames = [];
+	for (var i = 0; i < arr.length; i++) {
+		for (var j = arr.length -1; j > 0; j--) {
+			if (uniqNames.indexOf(arr[i]) === -1) {
+				uniqNames.push(arr[i]);
+				break;
+			}
+			else {
+			  break;
+			}
 
+		}
+
+
+	}
+	return callBack(uniqNames);
+}
 
     //Code Here for uniq
 
